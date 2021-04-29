@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.select-time, .music-container, .play-container {
+  height: 80%;
+  flex: 1;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.select-time {
+
+
+}
+
+.music-container {
+
+
+}
+
+.play-container {
+  position: relative;
+
+}
+
+.play-container svg {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+
+.play-container svg circle {
+  transition: all 0.2s ease-in-out;
+}
+
+.display-time {
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  font-size: 50px;
+}
+
+.replay {
+  position: absolute;
+  bottom: 20%;
+}
+
+video {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: -10;
+}
+
+.select-time button, .music-container button {
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.select-time button:hover {
+   color: black;
+   background: white;
+}
+
+.music-container button {
+  border: none;
+  height: 120px;
+  width: 120px;
+  padding: 30px;
+  border-radius: 50%;
+}
+
+.music-container button:nth-child(1) {
+  background: #4972a1;
+}
+
+.music-container button:nth-child(2) {
+  background: #a14f49;
+}
+
+.music-container button img{
+  height: 100%;
+}
